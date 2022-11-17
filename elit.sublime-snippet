@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+<el-input type="textarea" :rows="${1:2}" v-model="$2" placeholder="$3"></el-input>
+]]></content>
+    <tabTrigger>elit</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>elit: element-ui el-input type="textarea"</description>
+</snippet>

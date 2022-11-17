@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+<el-tag type="warning" closable>$1</el-tag>
+]]></content>
+    <tabTrigger>eltagw</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>eltagw: element-ui el-tag type="warning"</description>
+</snippet>

@@ -1,0 +1,16 @@
+<snippet>
+    <content>
+        <![CDATA[
+<el-select v-model="$1" placeholder="请选择">
+    <el-option v-for="item in ${4:options}"
+        :key="item.value"
+        :label="item.label"
+        :value="item.value">
+    </el-option>
+</el-select>
+]]>
+    </content>
+    <tabTrigger>elsel</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>elsel: element-ui el-select</description>
+</snippet>

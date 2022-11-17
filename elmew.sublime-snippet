@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+this.\$message({
+    message: '$1',
+    type: 'warning',
+    showClose: ${3:true},
+});
+]]></content>
+    <tabTrigger>elmew</tabTrigger>
+    <scope>text.html, text.vue, source.js</scope>
+    <description>elmew: element-ui $message warning</description>
+</snippet>

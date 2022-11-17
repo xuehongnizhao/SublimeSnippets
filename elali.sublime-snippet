@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+<el-alert type="info" :title="$1" show-icon></el-alert>
+]]></content>
+    <tabTrigger>elali</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>elali: element-ui el-alert type="info"</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+<el-aside width="${1:200px}">
+    ${2:<!-- Aside content -->}
+</el-aside>
+]]></content>
+    <tabTrigger>elas</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>elas: element-ui el-aside</description>
+</snippet>

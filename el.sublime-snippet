@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+<el-${1}></el-${1}>
+]]></content>
+    <tabTrigger>el</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>el: element-ui el-*</description>
+</snippet>

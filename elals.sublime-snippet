@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+<el-alert type="success" :title="$1" show-icon></el-alert>
+]]></content>
+    <tabTrigger>elals</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>elals: element-ui el-alert type="success"</description>
+</snippet>

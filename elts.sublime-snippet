@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+<el-time-select v-model="$1" :picker-options="$2" placeholder="${3:选择时间}">
+</el-time-select>
+]]></content>
+    <tabTrigger>elts</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>elts: element-ui el-time-select</description>
+</snippet>

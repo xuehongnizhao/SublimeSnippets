@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+<el-slider v-model="$1" :step="${2:1}" show-stops>
+</el-slider>
+]]></content>
+    <tabTrigger>elsl</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>elsl: element-ui el-slider</description>
+</snippet>

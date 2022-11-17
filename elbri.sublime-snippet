@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+<el-breadcrumb-item :to="{ path: '$1', name: '$2' }">$3</el-breadcrumb-item>
+]]></content>
+    <tabTrigger>elbri</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>elbri: element-ui el-breadcrumb-item</description>
+</snippet>

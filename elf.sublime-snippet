@@ -1,0 +1,15 @@
+<snippet>
+    <content>
+        <![CDATA[
+<el-form :model="pForm" ref="pFormRef" label-width="100px" label-suffix=':'>
+    <el-form-item label="$2" prop="$3">
+
+    </el-form-item>
+    
+</el-form>
+]]>
+    </content>
+    <tabTrigger>elf</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>elf: element-ui el-form</description>
+</snippet>

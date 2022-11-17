@@ -1,0 +1,18 @@
+<snippet>
+    <content><![CDATA[
+<el-dropdown trigger="${1:click}" @command="$2">
+    <span>
+        <i class="el-icon-arrow-down el-icon--right"></i>
+    </span>
+    <el-dropdown-menu slot="dropdown">
+        <el-dropdown-item v-for="${3:item} in ${4:items}"
+            :key="${3:item}.${5:key}" :command="${3:item}.${6:command}">
+            {{${3:item}.${7:title}}}
+        </el-dropdown-item>
+    </el-dropdown-menu>
+</el-dropdown>
+]]></content>
+    <tabTrigger>eldr</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>eldr: element-ui el-dropdown</description>
+</snippet>

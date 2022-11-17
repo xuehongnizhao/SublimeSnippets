@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+<el-collapse-item :title="$1" :name="$2">
+    ${3:<!-- content -->}
+</el-collapse-item>
+]]></content>
+    <tabTrigger>elcollai</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>elcollai: element-ui el-collapse-item</description>
+</snippet>

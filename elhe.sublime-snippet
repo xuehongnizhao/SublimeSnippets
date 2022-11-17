@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+<el-header height="$1">
+    ${2:<!-- Header content -->}
+</el-header>
+]]></content>
+    <tabTrigger>elhe</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>elhe: element-ui el-header</description>
+</snippet>

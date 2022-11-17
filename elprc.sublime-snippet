@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+<el-progress type="circle" :percentage="$1" :status="$2"></el-progress>
+]]></content>
+    <tabTrigger>elprc</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>elprc: element-ui el-progress type="circle"</description>
+</snippet>

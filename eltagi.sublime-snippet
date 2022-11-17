@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+<el-tag type="info" closable>$1</el-tag>
+]]></content>
+    <tabTrigger>eltagi</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>eltagi: element-ui el-tag type="info"</description>
+</snippet>

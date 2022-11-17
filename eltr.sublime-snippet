@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+<el-transfer v-model="$1" :data="$2"></el-transfer>
+]]></content>
+    <tabTrigger>eltr</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>eltr: element-ui el-transfer</description>
+</snippet>

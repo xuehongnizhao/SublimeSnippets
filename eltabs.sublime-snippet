@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+<el-tabs v-model="$1"
+    type="${2:card}">
+    <el-tab-pane v-for="${3:item} in items"
+        :key="${3:item}.${4:key}"
+        :label="${3:item}.${5:label}"
+        :name="${3:item}.${6:id}">
+        $7
+    </el-tab-pane>
+</el-tabs>
+]]></content>
+    <tabTrigger>eltabs</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>eltabs: element-ui el-tabs</description>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+<el-tag type="danger" closable>$1</el-tag>
+]]></content>
+    <tabTrigger>eltagd</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>eltagd: element-ui el-tag type="danger"</description>
+</snippet>

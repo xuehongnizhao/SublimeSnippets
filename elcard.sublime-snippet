@@ -1,0 +1,15 @@
+<snippet>
+    <content>
+        <![CDATA[
+<el-card :body-style="{ padding: '10px' }">
+	<template #header>
+        <ZQLabel>$2</ZQLabel>
+        </template>
+    $3
+</el-card>
+]]>
+    </content>
+    <tabTrigger>elcard</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>elcard: element-ui el-card</description>
+</snippet>

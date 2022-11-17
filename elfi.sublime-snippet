@@ -1,0 +1,12 @@
+<snippet>
+    <content>
+        <![CDATA[
+<el-form-item label="$1" prop="$2">
+    $3
+</el-form-item>
+]]>
+    </content>
+    <tabTrigger>elfi</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>elfi: element-ui el-form-item</description>
+</snippet>

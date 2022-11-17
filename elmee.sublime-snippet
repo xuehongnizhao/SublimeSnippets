@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+this.\$message({
+    message: '$1',
+    type: 'error',
+    showClose: ${3:true},
+});
+]]></content>
+    <tabTrigger>elmee</tabTrigger>
+    <scope>text.html, text.vue, source.js</scope>
+    <description>elmee: element-ui $message error</description>
+</snippet>

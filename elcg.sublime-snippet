@@ -1,0 +1,12 @@
+<snippet>
+    <content>
+        <![CDATA[
+<el-checkbox-group v-model="$1">
+    <el-checkbox v-for="item in ${3:items}" :key="item.value" :label="item.label"></el-checkbox>
+</el-checkbox-group>
+]]>
+    </content>
+    <tabTrigger>elcg</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>elcg: element-ui el-checkbox-group</description>
+</snippet>

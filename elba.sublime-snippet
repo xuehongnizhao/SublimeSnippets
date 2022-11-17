@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+<el-badge :value="$1">
+    $2
+</el-badge>
+]]></content>
+    <tabTrigger>elba</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>elba: element-ui el-badge</description>
+</snippet>

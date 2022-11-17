@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+<el-rate v-model="$1"></el-rate>
+]]></content>
+    <tabTrigger>elra</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>elra: element-ui el-rate</description>
+</snippet>

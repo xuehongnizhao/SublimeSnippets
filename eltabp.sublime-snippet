@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+<el-tab-pane :label="$1" :name="$2">
+    $3
+</el-tab-pane>
+]]></content>
+    <tabTrigger>eltabp</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>eltabp: element-ui el-tab-pane</description>
+</snippet>

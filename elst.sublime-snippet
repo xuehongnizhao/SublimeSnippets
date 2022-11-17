@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+<el-step :title="$1" :description="$2" :icon="$3"></el-step>
+]]></content>
+    <tabTrigger>elst</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>elst: element-ui el-step</description>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+<el-alert type="error" :title="$1" show-icon></el-alert>
+]]></content>
+    <tabTrigger>elale</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>elale: element-ui el-alert type="error"</description>
+</snippet>

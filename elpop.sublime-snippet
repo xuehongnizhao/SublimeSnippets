@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+<el-popover
+    :ref="$1"
+    placement="$2"
+    :title="$3"
+    width="$4"
+    trigger="${5:click}"
+    content="$6">
+    ${7: <!-- <el-button slot="reference">content</el-button> -->}
+</el-popover>
+]]></content>
+    <tabTrigger>elpop</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>elpop: element-ui el-popover</description>
+</snippet>

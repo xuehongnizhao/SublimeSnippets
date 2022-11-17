@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+<el-color-picker v-model="$1"></el-color-picker>
+]]></content>
+    <tabTrigger>elcp</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>elcp: element-ui el-color-picker</description>
+</snippet>

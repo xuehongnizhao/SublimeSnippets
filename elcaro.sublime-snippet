@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+<el-carousel trigger="${1:hover}" height="${2:150px}">
+    <el-carousel-item v-for="${3:item} in ${4:items}" :key="${3:item}.${5:key}">
+        ${6:<!-- content -->}
+    </el-carousel-item>
+</el-carousel>
+]]></content>
+    <tabTrigger>elcaro</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>elcaro: element-ui el-carousel</description>
+</snippet>

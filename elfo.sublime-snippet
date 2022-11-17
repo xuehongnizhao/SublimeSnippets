@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+<el-footer height="$1">
+    ${2:<!-- Footer content -->}
+</el-footer>
+]]></content>
+    <tabTrigger>elfo</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>elfo: element-ui el-footer</description>
+</snippet>

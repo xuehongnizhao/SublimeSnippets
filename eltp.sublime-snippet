@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+<el-time-picker v-model="$1"
+    :picker-options="{
+        selectableRange: '${2:18:30:00} - ${3:20:30:00}'
+    }"
+    placeholder="${4:任意时间点}">
+</el-time-picker>
+]]></content>
+    <tabTrigger>eltp</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>eltp: element-ui el-time-picker</description>
+</snippet>

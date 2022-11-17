@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+this.\$message({
+    message: '$1',
+    type: 'info',
+    showClose: ${3:true},
+});
+]]></content>
+    <tabTrigger>elmei</tabTrigger>
+    <scope>text.html, text.vue, source.js</scope>
+    <description>elmei: element-ui $message info</description>
+</snippet>

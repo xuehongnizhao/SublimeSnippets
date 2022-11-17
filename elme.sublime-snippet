@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[
+this.\$message({
+    message: '$1',
+    type: '$2',
+    showClose: ${3:true},
+});
+]]></content>
+    <tabTrigger>elme</tabTrigger>
+    <scope>text.html, text.vue, source.js</scope>
+    <description>elme: element-ui $message</description>
+</snippet>

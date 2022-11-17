@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+element-loading-text="${1:拼命加载中}" element-loading-spinner="${2:el-icon-loading}" element-loading-background="${3:rgba(0, 0, 0, 0.8)}"
+]]></content>
+    <tabTrigger>elloads</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>elloads: element-ui el-loading options</description>
+</snippet>

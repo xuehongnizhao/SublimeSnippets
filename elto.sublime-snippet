@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+<el-tooltip content="$1" placement="$2" effect="${3:dark}">
+    ${4:<!-- content to trigger tooltip here -->}
+</el-tooltip>
+]]></content>
+    <tabTrigger>elto</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>elto: element-ui el-tooltip</description>
+</snippet>

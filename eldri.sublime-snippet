@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+<el-dropdown-item :command="$1">$2</el-dropdown-item>
+]]></content>
+    <tabTrigger>eldri</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>eldri: element-ui el-dropdown-item</description>
+</snippet>

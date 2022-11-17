@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+el-icon-${1}
+]]></content>
+    <tabTrigger>elic</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>elic: element-ui el-icon-*</description>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+<el-menu-item :index="$1">$2</el-menu-item>
+]]></content>
+    <tabTrigger>elmeni</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>elmeni: element-ui el-menu-item</description>
+</snippet>

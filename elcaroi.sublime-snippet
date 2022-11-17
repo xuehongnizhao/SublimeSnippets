@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+<el-carousel-item>
+    ${1:<!-- content -->}
+</el-carousel-item>
+]]></content>
+    <tabTrigger>elcaroi</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>elcaroi: element-ui el-carousel-item</description>
+</snippet>

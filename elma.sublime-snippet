@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+<el-main height="$1">
+    ${2:<!-- Main content -->}
+</el-main>
+]]></content>
+    <tabTrigger>elma</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>elma: element-ui el-main</description>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+<el-progress :percentage="$1" :status="$2"></el-progress>
+]]></content>
+    <tabTrigger>elpr</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>elpr: element-ui el-progress</description>
+</snippet>

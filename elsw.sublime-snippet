@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+<el-switch v-model="$1" active-text="$2" inactive-text="$3">
+</el-switch>
+]]></content>
+    <tabTrigger>elsw</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>elsw: element-ui el-switch</description>
+</snippet>

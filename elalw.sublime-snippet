@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+<el-alert type="warning" :title="$1" show-icon></el-alert>
+]]></content>
+    <tabTrigger>elalw</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>elalw: element-ui el-alert type="warning"</description>
+</snippet>

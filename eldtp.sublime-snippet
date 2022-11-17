@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+<el-date-picker type="datetime" v-model="$1" placeholder="${2:选择日期时间}">
+</el-date-picker>
+]]></content>
+    <tabTrigger>eldtp</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>eldtp: element-ui el-date-picker type="datetime"</description>
+</snippet>

@@ -1,0 +1,15 @@
+<snippet>
+    <content>
+        <![CDATA[
+<el-row :gutter="10">
+    <el-col :span="${2:4}">
+        ${3:}
+    </el-col>
+   
+</el-row>
+]]>
+    </content>
+    <tabTrigger>elrow</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>elrow: element-ui el-row</description>
+</snippet>

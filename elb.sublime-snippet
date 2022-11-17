@@ -1,0 +1,10 @@
+<snippet>
+    <content>
+        <![CDATA[
+<el-button type="${1:primary}" @click="$2"></el-button>
+]]>
+    </content>
+    <tabTrigger>elb</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>elb: element-ui el-button</description>
+</snippet>
