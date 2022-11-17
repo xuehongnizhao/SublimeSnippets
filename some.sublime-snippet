@@ -1,0 +1,14 @@
+<!-- some()方法会返回一个Boolean类型的值，该值取决了数组中是否有元素满足给定的条件 找到就停止 -->
+<snippet>
+  <content>
+    <![CDATA[some((value) => {
+          if (${1:value}) return true
+          return false
+        })
+]]>
+  </content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>some</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>

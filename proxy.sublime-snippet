@@ -1,0 +1,10 @@
+<snippet>
+    <content>
+        <![CDATA[
+const { proxy } = getCurrentInstance();
+]]>
+    </content>
+    <tabTrigger>proxy</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description></description>
+</snippet>

@@ -1,0 +1,20 @@
+<snippet>
+    <content>
+        <![CDATA[
+switch(${1:表达式}) {
+     case ${2:key}:
+        ${3:表达式}
+        break;
+     case ${4:key}:
+        ${5:表达式}
+        break;
+     default:
+        ${6:表达式}
+} 
+]]>
+    </content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>swi</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>

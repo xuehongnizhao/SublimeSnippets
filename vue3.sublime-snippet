@@ -1,0 +1,25 @@
+<snippet>
+    <content>
+        <![CDATA[
+      <template>
+    <div class="app-container">
+        <el-card :body-style="{ padding: '10px' }">
+            <template #header>
+                <ZQLabel>$1</ZQLabel>
+            </template>
+        </el-card>
+    </div>
+</template>
+<script setup>
+const { proxy } = getCurrentInstance();
+const { sys_normal_disable } = proxy.useDict("sys_normal_disable");
+</script>
+<style scoped lang="scss">
+</style>
+]]>
+    </content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>vue3</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>
