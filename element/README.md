@@ -1,2 +1,0 @@
-# SublimeSnippets
-# SublimeSnippets
