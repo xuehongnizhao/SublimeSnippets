@@ -1,0 +1,10 @@
+<snippet>
+    <content>
+        <![CDATA[
+<dict-tag :options="sys_normal_disable" :value="scope.row.status" />
+]]>
+    </content>
+    <tabTrigger>dictT</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <!-- <description>eli: element-ui el-input</description> -->
+</snippet>

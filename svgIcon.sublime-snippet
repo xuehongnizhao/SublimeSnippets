@@ -1,6 +1,6 @@
 <snippet>
     <content>
-        <![CDATA[<svg-icon style="font-size:16px;" icon-class="build" /> 
+        <![CDATA[<svg-icon style="font-size:16px;" icon="build" /> 
 
 
 ]]>

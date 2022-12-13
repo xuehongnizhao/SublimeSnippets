@@ -1,0 +1,15 @@
+<snippet>
+    <content>
+        <![CDATA[
+proxy.$modal.confirm('是否确认$1？').then(function() {
+            return $2(pForm.value.$3);
+        }).then(() => {
+            loadData();
+            proxy.$modal.msgSuccess("$1成功");
+        }).catch(() => {});
+]]>
+    </content>
+    <tabTrigger>pcon</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description>elin: element-ui el-input-number</description>
+</snippet>

@@ -1,7 +1,7 @@
 <snippet>
     <content>
         <![CDATA[
-<el-input-number v-model="pForm.$1" :min="100" :max="900" step-strictly :precision="0" :step="100" value-on-clear="min" controls-position="right"></el-input-number>
+<el-input-number v-model="$1" placeholder="$2" :min="1" :max="900" step-strictly :precision="0" :step="1" value-on-clear="min" controls-position="right"></el-input-number>
 ]]>
     </content>
     <tabTrigger>elin</tabTrigger>
