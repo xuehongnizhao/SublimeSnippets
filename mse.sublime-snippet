@@ -1,0 +1,11 @@
+<snippet>
+    <content>
+        <![CDATA[
+proxy.\$modal.msgError("$1")
+return
+]]>
+    </content>
+    <tabTrigger>mse</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description></description>
+</snippet>

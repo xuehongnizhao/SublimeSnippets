@@ -1,0 +1,19 @@
+<snippet>
+    <content>
+        <![CDATA[
+computed({
+	get(){
+	return props.$1
+	},
+	set(val){
+	emit('update:$1',val)
+	}
+})
+
+]]>
+    </content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>watch</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>

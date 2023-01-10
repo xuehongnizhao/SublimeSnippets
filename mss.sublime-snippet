@@ -1,0 +1,10 @@
+<snippet>
+    <content>
+        <![CDATA[
+proxy.\$modal.msgSuccess("$1")
+]]>
+    </content>
+    <tabTrigger>mss</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description></description>
+</snippet>

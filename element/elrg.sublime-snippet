@@ -2,7 +2,7 @@
     <content>
         <![CDATA[
 <el-radio-group v-model="$1">
-	<el-radio v-for="item in $2" :key="item.value" :label="item.label"> </el-radio>
+	<el-radio v-for="item in $2" :key="item.value" :label="item.value">{{label}} </el-radio>
 </el-radio-group>
 ]]>
     </content>
