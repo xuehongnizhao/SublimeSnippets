@@ -1,0 +1,11 @@
+<snippet>
+    <content>
+        <![CDATA[
+const { proxy } = getCurrentInstance();
+const dicts = ref(proxy.useDict(['$1']))
+]]>
+    </content>
+    <tabTrigger>dicts</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description></description>
+</snippet>

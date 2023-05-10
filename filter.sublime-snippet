@@ -1,14 +1,14 @@
 <!-- filter()方法会返回一个新数组，该新数组的元素是符合回调函数中筛选条件的结果 -->
 <snippet>
-  <content>
-    <![CDATA[map(value => {
-  let item=${1:code}
-  return item;
+    <content>
+        <![CDATA[map(value => {
+  
+  return value;
 });
 ]]>
-  </content>
-  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>map</tabTrigger>
-  <!-- Optional: Set a scope to limit where the snippet will trigger -->
-  <!-- <scope>source.python</scope> -->
+    </content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>map</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
 </snippet>

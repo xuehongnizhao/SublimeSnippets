@@ -1,0 +1,10 @@
+<snippet>
+    <content>
+        <![CDATA[
+:{required: true,message: "$1 不能为空",trigger: ["blur","change"]},
+]]>
+    </content>
+    <tabTrigger>rules</tabTrigger>
+    <scope>text.html, text.vue</scope>
+    <description></description>
+</snippet>

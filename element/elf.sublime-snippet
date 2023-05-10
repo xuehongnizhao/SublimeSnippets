@@ -1,7 +1,7 @@
 <snippet>
     <content>
         <![CDATA[
-<el-form :model="pForm" ref="pFormRef" label-width="100px" label-suffix=':'>
+<el-form :model="pForm" ref="pFormRef" :rules="pRules" label-width="100px" label-suffix=':'>
     <el-form-item label="$2" prop="$3">
 
     </el-form-item>

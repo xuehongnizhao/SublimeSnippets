@@ -1,0 +1,1221 @@
+{
+    "every": {
+        "prefix": "every",
+        "body": [
+            "every((value) => {",
+            "if (${1:value}) return true",
+            "return false",
+            "})"
+        ],
+        "description": "no description yet."
+    },
+    "forEach": {
+        "prefix": "forEach",
+        "body": [
+            "forEach((value, index) => {",
+            "${1:code}",
+            "})"
+        ],
+        "description": "no description yet."
+    },
+    "promis": {
+        "prefix": "promis",
+        "body": [
+            "return new Promise((resolve, reject) => {",
+            "})"
+        ],
+        "description": "no description yet."
+    },
+    "map": {
+        "prefix": "map",
+        "body": [
+            "map(value => {",
+            "return value;",
+            "});"
+        ],
+        "description": "no description yet."
+    },
+    "proxy": {
+        "prefix": "proxy",
+        "body": [
+            "const { proxy } = getCurrentInstance();"
+        ],
+        "description": "no description yet."
+    },
+    "log": {
+        "prefix": "log",
+        "body": [
+            "console.log(${1:res})"
+        ],
+        "description": "no description yet."
+    },
+    "setInterval": {
+        "prefix": "setInterval",
+        "body": [
+            "const _this = this",
+            "setInterval(function() {",
+            "if ($1) {}",
+            "}, 3000);"
+        ],
+        "description": "no description yet."
+    },
+    "setTimeout": {
+        "prefix": "setTimeout",
+        "body": [
+            "setTimeout(() => {",
+            "$1",
+            "}, 2000);"
+        ],
+        "description": "no description yet."
+    },
+    "some": {
+        "prefix": "some",
+        "body": [
+            "some((value) => {",
+            "if (${1:value}) return true",
+            "return false",
+            "})"
+        ],
+        "description": "no description yet."
+    },
+    "catch": {
+        "prefix": "catch",
+        "body": [
+            "catch((res) => {",
+            "${1:code}",
+            "})"
+        ],
+        "description": "no description yet."
+    },
+    "mse": {
+        "prefix": "mse",
+        "body": [
+            "proxy.$modal.msgError('$1')",
+            "return"
+        ],
+        "description": "no description yet."
+    },
+    "vue3": {
+        "prefix": "vue3",
+        "body": [
+            "<template>",
+            "<div class='app-container'>",
+            "<el-card :body-style='{ padding: '10px' }'>",
+            "<template #header>",
+            "<ZQLabel>$1</ZQLabel>",
+            "</template>",
+            "</el-card>",
+            "</div>",
+            "</template>",
+            "<script setup>",
+            "const { proxy } = getCurrentInstance();",
+            "const { sys_normal_disable } = proxy.useDict('sys_normal_disable');",
+            "</script>",
+            "<style scoped lang='scss'>",
+            "</style>"
+        ],
+        "description": "no description yet."
+    },
+    "dicts": {
+        "prefix": "dicts",
+        "body": [
+            "const { proxy } = getCurrentInstance();",
+            "const dicts = ref(proxy.useDict(['$1']))"
+        ],
+        "description": "no description yet."
+    },
+    "watch": {
+        "prefix": "watch",
+        "body": [
+            "watch(() => $1, val => {",
+            "$2",
+            "}",
+            "//, { deep: true, immediate: true }",
+            ");"
+        ],
+        "description": "no description yet."
+    },
+    "dictT": {
+        "prefix": "dictT",
+        "body": [
+            "<dict-tag :options='sys_normal_disable' :value='scope.row.status' />"
+        ],
+        "description": "no description yet."
+    },
+    "cdiv": {
+        "prefix": "cdiv",
+        "body": [
+            "<div style='display: table;width: 500px;height: 200px;border: 1px solid red;'>",
+            "<div style='display: table-cell;vertical-align: middle;text-align:center;'>块级元素</div>",
+            "</div>",
+            "<div style='display:flex;justify-content: center; align-items:center; width: 500px;height: 200px;border: 1px solid green;text-align:center;line-height:100px '>",
+            "<div style='width: 100px;height: 100px;border: 1px solid gold'>块级元素</div>",
+            "</div>",
+            "<div style='position:relative; width: 500px;height: 200px;border: 1px solid red;'>",
+            "<div style='position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width: 100px;height: 100px;border: 1px solid gold;text-align:center;line-height:100px'>",
+            "块级元素",
+            "</div>",
+            "</div>",
+            "<div style='position:relative; width: 500px;height: 200px;border: 1px solid red;'>",
+            "<div style='position:absolute;top:50%;left:50%;margin-left: -50px;margin-top: -50px;",
+            "width: 100px;height: 100px;border: 1px solid gold;text-align:center;line-height:100px'>",
+            "块级元素",
+            "</div>",
+            "</div>",
+            "<div style='position:relative; width: 500px;height: 200px;border: 1px solid red;'>",
+            "<div style='position:absolute;top: 0;left: 0;right: 0;bottom: 0;margin: auto;",
+            "width: 100px;height: 100px;border: 1px solid gold;text-align:center;line-height:100px'>",
+            "块级元素",
+            "</div>",
+            "</div>",
+            "<div style='position:fixed;top: 50%;left: 50%;margin-left: -50px;margin-top: -50px;z-index: 999;",
+            "width: 100px;height: 100px;border: 1px solid gold;text-align:center;line-height:100px'>",
+            "块级元素",
+            "</div>",
+            "<div style='margin: 50vh auto 0;transform: translateY(-50%);line-height:100px",
+            "width: 100px;height: 100px;border: 1px solid gold;text-align:center;'>",
+            "块级元素",
+            "</div>",
+            "<div style='display: flex;width: 500px;height: 200px;border: 1px solid red;'>",
+            "<div style='margin: auto;width: 100px;height: 100px;border: 1px solid gold;text-align:center;line-height:100px'>",
+            "块级元素",
+            "</div>",
+            "</div>",
+            "<div style='display: grid; place-items: center;'>",
+            "<div>",
+            "块级元素",
+            "</div>",
+            "</div>",
+            "// CSS",
+            "// body {",
+            "//            display: grid;",
+            "//            place-items: center;",
+            "//下划线",
+            "// &.active::after {",
+            "//     content: '';",
+            "//     width: 20px;",
+            "//     height: 4px;",
+            "//     display: block;",
+            "//     background-color: red;",
+            "//     // position: f;",
+            "//     margin-left: calc(50% - 10px);",
+            "//     margin-top: 5px;",
+            "//     box-sizing: border-box;",
+            "// }",
+            "//        }"
+        ],
+        "description": "no description yet."
+    },
+    "///": {
+        "prefix": "///",
+        "body": [
+            "/*",
+            "$1",
+            "*/"
+        ],
+        "description": "no description yet."
+    },
+    "tcolor": {
+        "prefix": "tcolor",
+        "body": [
+            "#5180FF"
+        ],
+        "description": "no description yet."
+    },
+    "computed": {
+        "prefix": "computed",
+        "body": [
+            "computed({",
+            "get(){",
+            "return props.$1",
+            "},",
+            "set(val){",
+            "emit('update:$1',val)",
+            "}",
+            "})"
+        ],
+        "description": "no description yet."
+    },
+    "confirm": {
+        "prefix": "confirm",
+        "body": [
+            "proxy.$modal.confirm('是否确认$1？').then(function() {",
+            "return $2;",
+            "}).then(() => {",
+            "loadData();",
+            "proxy.$modal.msgSuccess('$1成功');",
+            "}).catch(() => {});"
+        ],
+        "description": "no description yet."
+    },
+    "mss": {
+        "prefix": "mss",
+        "body": [
+            "proxy.$modal.msgSuccess('$1')"
+        ],
+        "description": "no description yet."
+    },
+    "validate": {
+        "prefix": "validate",
+        "body": [
+            "validate(valid => {",
+            "if(valid) {",
+            "$1",
+            "}",
+            "});"
+        ],
+        "description": "no description yet."
+    },
+    "rules": {
+        "prefix": "rules",
+        "body": [
+            ":{required: true,message: '$1 不能为空',trigger: ['blur','change']},"
+        ],
+        "description": "no description yet."
+    },
+    "then": {
+        "prefix": "then",
+        "body": [
+            "then((res) => {",
+            "${1:code}",
+            "})"
+        ],
+        "description": "no description yet."
+    },
+    "swi": {
+        "prefix": "swi",
+        "body": [
+            "switch(${1:表达式}) {",
+            "case ${2:key}:",
+            "${3:表达式}",
+            "break;",
+            "case ${4:key}:",
+            "${5:表达式}",
+            "break;",
+            "default:",
+            "${6:表达式}",
+            "}"
+        ],
+        "description": "no description yet."
+    },
+    "=>": {
+        "prefix": "=>",
+        "body": [
+            "(() => {",
+            "})"
+        ],
+        "description": "no description yet."
+    },
+    "svg": {
+        "prefix": "svg",
+        "body": [
+            "<svg-icon style='font-size:16px;' icon='build' />"
+        ],
+        "description": "no description yet."
+    },
+    "nextTick": {
+        "prefix": "nextTick",
+        "body": [
+            "nextTick(() => {",
+            "$1",
+            "})"
+        ],
+        "description": "no description yet."
+    },
+    "elrg": {
+        "prefix": "elrg",
+        "body": [
+            "<el-radio-group v-model='$1'>",
+            "<el-radio v-for='item in $2' :key='item.value' :label='item.value'>{{label}} </el-radio>",
+            "</el-radio-group>"
+        ],
+        "description": "no description yet."
+    },
+    "elrow": {
+        "prefix": "elrow",
+        "body": [
+            "<el-row :gutter='10'>",
+            "<el-col :span='${2:4}'>",
+            "${3:}",
+            "</el-col>",
+            "</el-row>"
+        ],
+        "description": "no description yet."
+    },
+    "elf": {
+        "prefix": "elf",
+        "body": [
+            "<el-form :model='pForm' ref='pFormRef' :rules='pRules' label-width='100px' label-suffix=':'>",
+            "<el-form-item label='$2' prop='$3'>",
+            "</el-form-item>",
+            "</el-form>"
+        ],
+        "description": "no description yet."
+    },
+    "eltabs": {
+        "prefix": "eltabs",
+        "body": [
+            "<el-tabs v-model='$1'",
+            "type='${2:card}'>",
+            "<el-tab-pane v-for='${3:item} in items'",
+            ":key='${3:item}.${4:key}'",
+            ":label='${3:item}.${5:label}'",
+            ":name='${3:item}.${6:id}'>",
+            "$7",
+            "</el-tab-pane>",
+            "</el-tabs>"
+        ],
+        "description": "no description yet."
+    },
+    "elsel": {
+        "prefix": "elsel",
+        "body": [
+            "<el-select v-model='$1' placeholder='$2'>",
+            "<el-option v-for='item in dicts.${4:options}'",
+            ":key='item.value'",
+            ":label='item.label'",
+            ":value='item.value'>",
+            "</el-option>",
+            "</el-select>"
+        ],
+        "description": "no description yet."
+    },
+    "elalw": {
+        "prefix": "elalw",
+        "body": [
+            "<el-alert type='warning' :title='$1' show-icon></el-alert>"
+        ],
+        "description": "no description yet."
+    },
+    "elst": {
+        "prefix": "elst",
+        "body": [
+            "<el-step :title='$1' :description='$2' :icon='$3'></el-step>"
+        ],
+        "description": "no description yet."
+    },
+    "eli": {
+        "prefix": "eli",
+        "body": [
+            "<el-input v-model='$1' placeholder=''></el-input>"
+        ],
+        "description": "no description yet."
+    },
+    "elfo": {
+        "prefix": "elfo",
+        "body": [
+            "<el-footer height='$1'>",
+            "${2:<!-- Footer content -->}",
+            "</el-footer>"
+        ],
+        "description": "no description yet."
+    },
+    "elnotis": {
+        "prefix": "elnotis",
+        "body": [
+            "this.$notify({",
+            "title: '${1}',",
+            "message: '${2}',",
+            "type: '${3:success}',",
+            "duration: '${4:4500}',",
+            "position: '${5:top-right}'",
+            "});"
+        ],
+        "description": "no description yet."
+    },
+    "elnoti": {
+        "prefix": "elnoti",
+        "body": [
+            "this.$notify({",
+            "title: '${1}',",
+            "message: '${2}',",
+            "type: '${3:info}',",
+            "duration: '${4:4500}',",
+            "position: '${5:top-right}'",
+            "});"
+        ],
+        "description": "no description yet."
+    },
+    "elca": {
+        "prefix": "elca",
+        "body": [
+            "<el-cascader :options='${1:options}' v-model='${2:selectedOptions}' @change='${3:handleChange}'>",
+            "</el-cascader>"
+        ],
+        "description": "no description yet."
+    },
+    "elale": {
+        "prefix": "elale",
+        "body": [
+            "<el-alert type='error' :title='$1' show-icon></el-alert>"
+        ],
+        "description": "no description yet."
+    },
+    "elcon": {
+        "prefix": "elcon",
+        "body": [
+            "<el-container>",
+            "<el-aside width='${1:200px}'>",
+            "${2:<!-- Aside content -->}",
+            "</el-aside>",
+            "<el-container>",
+            "<el-header height='$3'>",
+            "${4:<!-- Header content -->}",
+            "</el-header>",
+            "<el-main height='$5'>",
+            "${6:<!-- Main content -->}",
+            "</el-main>",
+            "</el-container>",
+            "</el-container>"
+        ],
+        "description": "no description yet."
+    },
+    "elbr": {
+        "prefix": "elbr",
+        "body": [
+            "<el-breadcrumb separator-class='${1:el-icon-arrow-right}'>",
+            "<el-breadcrumb-item :to='{ path: '$2', name: '$3' }'>$4</el-breadcrumb-item>",
+            "<el-breadcrumb-item :to='{ path: '$5', name: '$6' }'>$7</el-breadcrumb-item>",
+            "</el-breadcrumb>"
+        ],
+        "description": "no description yet."
+    },
+    "elmeal": {
+        "prefix": "elmeal",
+        "body": [
+            "this.$alert('${1:内容}', '${2:标题}', {",
+            "confirmButtonText: '${3:确定}',",
+            "callback: action => {",
+            "${4}",
+            "}",
+            "});"
+        ],
+        "description": "no description yet."
+    },
+    "elloads": {
+        "prefix": "elloads",
+        "body": [
+            "element-loading-text='${1:拼命加载中}' element-loading-spinner='${2:el-icon-loading}' element-loading-background='${3:rgba(0, 0, 0, 0.8)}'"
+        ],
+        "description": "no description yet."
+    },
+    "elmee": {
+        "prefix": "elmee",
+        "body": [
+            "this.$message({",
+            "message: '$1',",
+            "type: 'error',",
+            "showClose: ${3:true},",
+            "});"
+        ],
+        "description": "no description yet."
+    },
+    "elop": {
+        "prefix": "elop",
+        "body": [
+            "<el-option :label='$1' :value='$2'></el-option>"
+        ],
+        "description": "no description yet."
+    },
+    "elma": {
+        "prefix": "elma",
+        "body": [
+            "<el-main height='$1'>",
+            "${2:<!-- Main content -->}",
+            "</el-main>"
+        ],
+        "description": "no description yet."
+    },
+    "elu": {
+        "prefix": "elu",
+        "body": [
+            "<el-upload",
+            "action='$1'",
+            ":on-remove='$2'",
+            "multiple",
+            ":limit='${3:5}'",
+            ":on-exceed='$4'",
+            ":file-list='$5'>",
+            "<el-button size='small' type='primary'>${6:点击上传}</el-button>",
+            "<div slot='tip' class='el-upload__tip'>${7:只能上传jpg/png文件，且不超过500kb}</div>",
+            "</el-upload>"
+        ],
+        "description": "no description yet."
+    },
+    "elmebox": {
+        "prefix": "elmebox",
+        "body": [
+            "this.$msgbox({",
+            "title: '$1',",
+            "message: '${2}',",
+            "showCancelButton: true,",
+            "confirmButtonText: '${3:确定}',",
+            "cancelButtonText: '${4:取消}',",
+            "beforeClose: (action, instance, done) => {",
+            "${5}",
+            "}).then(action => {",
+            "${6}",
+            "});",
+            "});"
+        ],
+        "description": "no description yet."
+    },
+    "elra": {
+        "prefix": "elra",
+        "body": [
+            "<el-rate v-model='$1'></el-rate>"
+        ],
+        "description": "no description yet."
+    },
+    "eldp": {
+        "prefix": "eldp",
+        "body": [
+            "<el-date-picker v-model='$1' value-format='YYYY-MM-DD' type='date' placeholder='请选择$2日期'>",
+            "</el-date-picker>"
+        ],
+        "description": "no description yet."
+    },
+    "eltp": {
+        "prefix": "eltp",
+        "body": [
+            "<el-time-picker v-model='$1'",
+            ":picker-options='{",
+            "selectableRange: '${2:18:30:00} - ${3:20:30:00}'",
+            "}'",
+            "placeholder='${4:任意时间点}'>",
+            "</el-time-picker>"
+        ],
+        "description": "no description yet."
+    },
+    "elba": {
+        "prefix": "elba",
+        "body": [
+            "<el-badge :value='$1'>",
+            "$2",
+            "</el-badge>"
+        ],
+        "description": "no description yet."
+    },
+    "elal": {
+        "prefix": "elal",
+        "body": [
+            "<el-alert :title='$1' type='$2' show-icon></el-alert>"
+        ],
+        "description": "no description yet."
+    },
+    "eltagi": {
+        "prefix": "eltagi",
+        "body": [
+            "<el-tag type='info' closable>$1</el-tag>"
+        ],
+        "description": "no description yet."
+    },
+    "elcolla": {
+        "prefix": "elcolla",
+        "body": [
+            "<el-collapse v-model='${1:activeNames}' :accordion='${2:false}' @change='$3'>",
+            "<el-collapse-item v-for='${4:item} in ${5:items}'",
+            ":key='${4:item}.${6:id}'",
+            ":title='${4:item}.${7:title}'",
+            ":name='${4:item}.${6:id}'>",
+            "${8:<!-- content -->}",
+            "</el-collapse-item>",
+            "</el-collapse>"
+        ],
+        "description": "no description yet."
+    },
+    "elin": {
+        "prefix": "elin",
+        "body": [
+            "<el-input-number v-model='$1' placeholder='$2' :min='1' :max='900' step-strictly :precision='0' :step='1' value-on-clear='min' controls-position='right'></el-input-number>"
+        ],
+        "description": "no description yet."
+    },
+    "elr": {
+        "prefix": "elr",
+        "body": [
+            "<el-radio v-model='${1}' label='${2}'>$3</el-radio>"
+        ],
+        "description": "no description yet."
+    },
+    "elmecons": {
+        "prefix": "elmecons",
+        "body": [
+            "this.$confirm('${1:内容}', '${2:标题}', {",
+            "confirmButtonText: '${3:确定}',",
+            "cancelButtonText: '${4:取消}',",
+            "type: 'success',",
+            "callback: action => {",
+            "${5}",
+            "}",
+            "});"
+        ],
+        "description": "no description yet."
+    },
+    "elcg": {
+        "prefix": "elcg",
+        "body": [
+            "<el-checkbox-group v-model='$1'>",
+            "<el-checkbox v-for='item in ${3:items}' :key='item.value' :label='item.label'></el-checkbox>",
+            "</el-checkbox-group>"
+        ],
+        "description": "no description yet."
+    },
+    "elcaro": {
+        "prefix": "elcaro",
+        "body": [
+            "<el-carousel trigger='${1:hover}' height='${2:150px}'>",
+            "<el-carousel-item v-for='${3:item} in ${4:items}' :key='${3:item}.${5:key}'>",
+            "${6:<!-- content -->}",
+            "</el-carousel-item>",
+            "</el-carousel>"
+        ],
+        "description": "no description yet."
+    },
+    "eltags": {
+        "prefix": "eltags",
+        "body": [
+            "<el-tag type='success' closable>$1</el-tag>"
+        ],
+        "description": "no description yet."
+    },
+    "elmew": {
+        "prefix": "elmew",
+        "body": [
+            "this.$message({",
+            "message: '$1',",
+            "type: 'warning',",
+            "showClose: ${3:true},",
+            "});"
+        ],
+        "description": "no description yet."
+    },
+    "elfi": {
+        "prefix": "elfi",
+        "body": [
+            "<el-form-item label='$1' prop='$2'>",
+            "$3",
+            "</el-form-item>"
+        ],
+        "description": "no description yet."
+    },
+    "eltac": {
+        "prefix": "eltac",
+        "body": [
+            "<el-table-column",
+            ":prop='${1:col}.${2:id}'",
+            ":label='${1:col}.${3:label}'",
+            ":width='${1:col}.${4:width}'>",
+            "</el-table-column>"
+        ],
+        "description": "no description yet."
+    },
+    "elmeconi": {
+        "prefix": "elmeconi",
+        "body": [
+            "this.$confirm('${1:内容}', '${2:标题}', {",
+            "confirmButtonText: '${3:确定}',",
+            "cancelButtonText: '${4:取消}',",
+            "type: 'info',",
+            "callback: action => {",
+            "${5}",
+            "}",
+            "});"
+        ],
+        "description": "no description yet."
+    },
+    "elpop": {
+        "prefix": "elpop",
+        "body": [
+            "<el-popover",
+            ":ref='$1'",
+            "placement='$2'",
+            ":title='$3'",
+            "width='$4'",
+            "trigger='${5:click}'",
+            "content='$6'>",
+            "${7: <!-- <el-button slot='reference'>content</el-button> -->}",
+            "</el-popover>"
+        ],
+        "description": "no description yet."
+    },
+    "elit": {
+        "prefix": "elit",
+        "body": [
+            "<el-input type='textarea' :rows='${1:2}' v-model='$2' placeholder='$3'></el-input>"
+        ],
+        "description": "no description yet."
+    },
+    "elnotie": {
+        "prefix": "elnotie",
+        "body": [
+            "this.$notify({",
+            "title: '${1}',",
+            "message: '${2}',",
+            "type: '${3:error}',",
+            "duration: '${4:4500}',",
+            "position: '${5:top-right}'",
+            "});"
+        ],
+        "description": "no description yet."
+    },
+    "elto": {
+        "prefix": "elto",
+        "body": [
+            "<el-tooltip content='$1' placement='$2' effect='${3:dark}'>",
+            "${4:<!-- content to trigger tooltip here -->}",
+            "</el-tooltip>"
+        ],
+        "description": "no description yet."
+    },
+    "elas": {
+        "prefix": "elas",
+        "body": [
+            "<el-aside width='${1:200px}'>",
+            "${2:<!-- Aside content -->}",
+            "</el-aside>"
+        ],
+        "description": "no description yet."
+    },
+    "eltree": {
+        "prefix": "eltree",
+        "body": [
+            "<el-tree :data='$1' :props='$2' @node-click='$3'></el-tree>"
+        ],
+        "description": "no description yet."
+    },
+    "elals": {
+        "prefix": "elals",
+        "body": [
+            "<el-alert type='success' :title='$1' show-icon></el-alert>"
+        ],
+        "description": "no description yet."
+    },
+    "elpr": {
+        "prefix": "elpr",
+        "body": [
+            "<el-progress :percentage='$1' :status='$2'></el-progress>"
+        ],
+        "description": "no description yet."
+    },
+    "elb": {
+        "prefix": "elb",
+        "body": [
+            "<el-button type='${1:primary}' @click='$2'></el-button>"
+        ],
+        "description": "no description yet."
+    },
+    "eltypo": {
+        "prefix": "eltypo",
+        "body": [
+            "font-family: 'Helvetica Neue',Helvetica,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','微软雅黑',Arial,sans-serif;"
+        ],
+        "description": "no description yet."
+    },
+    "eldr": {
+        "prefix": "eldr",
+        "body": [
+            "<el-dropdown trigger='${1:click}' @command='$2'>",
+            "<span>",
+            "<i class='el-icon-arrow-down el-icon--right'></i>",
+            "</span>",
+            "<el-dropdown-menu slot='dropdown'>",
+            "<el-dropdown-item v-for='${3:item} in ${4:items}'",
+            ":key='${3:item}.${5:key}' :command='${3:item}.${6:command}'>",
+            "{{${3:item}.${7:title}}}",
+            "</el-dropdown-item>",
+            "</el-dropdown-menu>",
+            "</el-dropdown>"
+        ],
+        "description": "no description yet."
+    },
+    "elsts": {
+        "prefix": "elsts",
+        "body": [
+            "<el-steps :active='$1'>",
+            "<el-step v-for='${2:item} in ${3:items}'",
+            ":key='${2:item}.${4:key}'",
+            ":title='${2:item}.${5:title}'",
+            ":description='${2:item}.${6:description}'",
+            ":icon='${2:item}.${7:icon}'>",
+            "</el-step>",
+            "</el-steps>"
+        ],
+        "description": "no description yet."
+    },
+    "elali": {
+        "prefix": "elali",
+        "body": [
+            "<el-alert type='info' :title='$1' show-icon></el-alert>"
+        ],
+        "description": "no description yet."
+    },
+    "elbri": {
+        "prefix": "elbri",
+        "body": [
+            "<el-breadcrumb-item :to='{ path: '$1', name: '$2' }'>$3</el-breadcrumb-item>"
+        ],
+        "description": "no description yet."
+    },
+    "elcaroi": {
+        "prefix": "elcaroi",
+        "body": [
+            "<el-carousel-item>",
+            "${1:<!-- content -->}",
+            "</el-carousel-item>"
+        ],
+        "description": "no description yet."
+    },
+    "elprc": {
+        "prefix": "elprc",
+        "body": [
+            "<el-progress type='circle' :percentage='$1' :status='$2'></el-progress>"
+        ],
+        "description": "no description yet."
+    },
+    "eltr": {
+        "prefix": "eltr",
+        "body": [
+            "<el-transfer v-model='$1' :data='$2'></el-transfer>"
+        ],
+        "description": "no description yet."
+    },
+    "eltabp": {
+        "prefix": "eltabp",
+        "body": [
+            "<el-tab-pane :label='$1' :name='$2'>",
+            "$3",
+            "</el-tab-pane>"
+        ],
+        "description": "no description yet."
+    },
+    "elhe": {
+        "prefix": "elhe",
+        "body": [
+            "<el-header height='$1'>",
+            "${2:<!-- Header content -->}",
+            "</el-header>"
+        ],
+        "description": "no description yet."
+    },
+    "elnotiw": {
+        "prefix": "elnotiw",
+        "body": [
+            "this.$notify({",
+            "title: '${1}',",
+            "message: '${2}',",
+            "type: '${3:warning}',",
+            "duration: '${4:4500}',",
+            "position: '${5:top-right}'",
+            "});"
+        ],
+        "description": "no description yet."
+    },
+    "eltagd": {
+        "prefix": "eltagd",
+        "body": [
+            "<el-tag type='danger' closable>$1</el-tag>"
+        ],
+        "description": "no description yet."
+    },
+    "elcp": {
+        "prefix": "elcp",
+        "body": [
+            "<el-color-picker v-model='$1'></el-color-picker>"
+        ],
+        "description": "no description yet."
+    },
+    "elsw": {
+        "prefix": "elsw",
+        "body": [
+            "<el-switch v-model='$1' active-text='$2' inactive-text='$3'>",
+            "</el-switch>"
+        ],
+        "description": "no description yet."
+    },
+    "elic": {
+        "prefix": "elic",
+        "body": [
+            "el-icon-${1}"
+        ],
+        "description": "no description yet."
+    },
+    "el": {
+        "prefix": "el",
+        "body": [
+            "<el-${1}></el-${1}>"
+        ],
+        "description": "no description yet."
+    },
+    "elsl": {
+        "prefix": "elsl",
+        "body": [
+            "<el-slider v-model='$1' :step='${2:1}' show-stops>",
+            "</el-slider>"
+        ],
+        "description": "no description yet."
+    },
+    "elsubmen": {
+        "prefix": "elsubmen",
+        "body": [
+            "<el-submenu :index='$1'>",
+            "<template slot='title'>$2</template>",
+            "<el-menu-item v-for='(${3:item}, ${4:subIndex}) in $5'",
+            ":index='${4:subIndex} + 1'",
+            ":key='${5:item}.${6:key}'>>",
+            "{{${3:item}.$7}}",
+            "</el-menu-item>",
+            "</el-submenu>"
+        ],
+        "description": "no description yet."
+    },
+    "elpa": {
+        "prefix": "elpa",
+        "body": [
+            "<el-pagination",
+            "@size-change='${1:sizeChange}'",
+            "@current-change='${2:currentChange}'",
+            ":current-page='${3:currentPage}'",
+            ":page-sizes='${4:[20, 40, 80, 100]}'",
+            ":page-size='${5:pageSize}'",
+            "layout='total, sizes, prev, pager, next, jumper'",
+            ":total='${6:totalNum}' background>",
+            "</el-pagination>"
+        ],
+        "description": "no description yet."
+    },
+    "elmen": {
+        "prefix": "elmen",
+        "body": [
+            "<el-menu mode='${1:horizontal}' :default-active='$2' @select='$3'>",
+            "<el-submenu v-for='(${4:submenus}, ${5:index}) in ${6:menus}'",
+            ":index='${5:index} + 1'",
+            ":key='${4:submenus}.${5:key}'>",
+            "<template slot='title'>${4:submenus}.${6:title}</template>",
+            "<el-menu-item v-for='(${7:item}, ${8:subIndex}) in ${4:submenus}'",
+            ":index='(${5:index} + 1) + '-' + (${8:subIndex} + 1)'>",
+            "{{${7:item}.${9:title}}}",
+            "</el-menu-item>",
+            "</el-submenu>",
+            "</el-menu>"
+        ],
+        "description": "no description yet."
+    },
+    "elts": {
+        "prefix": "elts",
+        "body": [
+            "<el-time-select v-model='$1' :picker-options='$2' placeholder='${3:选择时间}'>",
+            "</el-time-select>"
+        ],
+        "description": "no description yet."
+    },
+    "elmecone": {
+        "prefix": "elmecone",
+        "body": [
+            "this.$confirm('${1:内容}', '${2:标题}', {",
+            "confirmButtonText: '${3:确定}',",
+            "cancelButtonText: '${4:取消}',",
+            "type: 'error',",
+            "callback: action => {",
+            "${5}",
+            "}",
+            "});"
+        ],
+        "description": "no description yet."
+    },
+    "eldtp": {
+        "prefix": "eldtp",
+        "body": [
+            "<el-date-picker type='datetime' v-model='$1' placeholder='${2:选择日期时间}'>",
+            "</el-date-picker>"
+        ],
+        "description": "no description yet."
+    },
+    "eldri": {
+        "prefix": "eldri",
+        "body": [
+            "<el-dropdown-item :command='$1'>$2</el-dropdown-item>"
+        ],
+        "description": "no description yet."
+    },
+    "elpos": {
+        "prefix": "elpos",
+        "body": [
+            "<!-- ${1:top}/${2:top-start}/${3:top-end}/${4:bottom}/${5:bottom-start}/${6:bottom-end}/${7:left}/${8:left-start}/${9:left-end}/${10:right}/${11:right-start}/${12:right-end} -->"
+        ],
+        "description": "no description yet."
+    },
+    "elmecon": {
+        "prefix": "elmecon",
+        "body": [
+            "this.$confirm('${1:内容}', '${2:标题}', {",
+            "confirmButtonText: '${3:确定}',",
+            "cancelButtonText: '${4:取消}',",
+            "type: '${5}',",
+            "callback: action => {",
+            "${6}",
+            "}",
+            "});"
+        ],
+        "description": "no description yet."
+    },
+    "elme": {
+        "prefix": "elme",
+        "body": [
+            "this.$message({",
+            "message: '$1',",
+            "type: '$2',",
+            "showClose: ${3:true},",
+            "});"
+        ],
+        "description": "no description yet."
+    },
+    "eltagw": {
+        "prefix": "eltagw",
+        "body": [
+            "<el-tag type='warning' closable>$1</el-tag>"
+        ],
+        "description": "no description yet."
+    },
+    "elcollai": {
+        "prefix": "elcollai",
+        "body": [
+            "<el-collapse-item :title='$1' :name='$2'>",
+            "${3:<!-- content -->}",
+            "</el-collapse-item>"
+        ],
+        "description": "no description yet."
+    },
+    "elmeni": {
+        "prefix": "elmeni",
+        "body": [
+            "<el-menu-item :index='$1'>$2</el-menu-item>"
+        ],
+        "description": "no description yet."
+    },
+    "elmes": {
+        "prefix": "elmes",
+        "body": [
+            "this.$message({",
+            "message: '$1',",
+            "type: 'success',",
+            "showClose: ${3:true},",
+            "});"
+        ],
+        "description": "no description yet."
+    },
+    "eldi": {
+        "prefix": "eldi",
+        "body": [
+            "<el-dialog title='$1' v-model='$2Open'  width='${3:800px}'>",
+            "$5",
+            "<template #footer>",
+            "<el-button @click='$2Open = false'>取 消</el-button>",
+            "<el-button type='primary' @click='$2Confirm'>确 定</el-button>",
+            "</template>",
+            "</el-dialog>"
+        ],
+        "description": "no description yet."
+    },
+    "eltag": {
+        "prefix": "eltag",
+        "body": [
+            "<el-tag type='$1' closable>$2</el-tag>"
+        ],
+        "description": "no description yet."
+    },
+    "elc": {
+        "prefix": "elc",
+        "body": [
+            "<el-checkbox v-model='${1}' label='${2}'>$3</el-checkbox>"
+        ],
+        "description": "no description yet."
+    },
+    "elmei": {
+        "prefix": "elmei",
+        "body": [
+            "this.$message({",
+            "message: '$1',",
+            "type: 'info',",
+            "showClose: ${3:true},",
+            "});"
+        ],
+        "description": "no description yet."
+    },
+    "elanims": {
+        "prefix": "elanims",
+        "body": [
+            "<!--",
+            "Fade: ${1:.el-fade-in-linear}/${2:.el-fade-in}",
+            "Zoom: ${3:.el-zoom-in-center}/${4:.el-zoom-in-top}/${5:.el-zoom-in-bottom}",
+            "Collapse: ${6:el-collapse-transition}",
+            "-->"
+        ],
+        "description": "no description yet."
+    },
+    "elmepro": {
+        "prefix": "elmepro",
+        "body": [
+            "this.$prompt('${1:内容}', '${2:标题}', {",
+            "confirmButtonText: '${3:确定}',",
+            "cancelButtonText: '${4:取消}',",
+            "inputPattern: '${5}',",
+            "inputErrorMessage: '${6}',",
+            "callback: action => {",
+            "${7}",
+            "}",
+            "});"
+        ],
+        "description": "no description yet."
+    },
+    "elcard": {
+        "prefix": "elcard",
+        "body": [
+            "<el-card :body-style='{ padding: '10px' }'>",
+            "<template #header>",
+            "<ZQLabel>$2</ZQLabel>",
+            "</template>",
+            "$3",
+            "</el-card>"
+        ],
+        "description": "no description yet."
+    },
+    "elcol": {
+        "prefix": "elcol",
+        "body": [
+            "<el-col :span='$1'>",
+            "${2:<!-- content -->}",
+            "</el-col>"
+        ],
+        "description": "no description yet."
+    },
+    "elmeconw": {
+        "prefix": "elmeconw",
+        "body": [
+            "this.$confirm('${1:内容}', '${2:标题}', {",
+            "confirmButtonText: '${3:确定}',",
+            "cancelButtonText: '${4:取消}',",
+            "type: 'warning',",
+            "callback: action => {",
+            "${5}",
+            "}",
+            "});"
+        ],
+        "description": "no description yet."
+    },
+    "elta": {
+        "prefix": "elta",
+        "body": [
+            "<el-table :data='$1'>",
+            "<el-table-column type='selection' width='55' align='center' @selection-change='handleSelectionChange'/>",
+            "<el-table-column label='xxxxx' width='100' align='center' prop='xxxx' />",
+            "<el-table-column label='xxxxx'  prop='xxxxx' align='center' show-overflow-tooltip>",
+            "<template #default='scope'>",
+            "<dict-tag :options='xxxxxxx' :value='scope.row.xxxx' />",
+            "</template>",
+            "</el-table-column>",
+            "</el-table>"
+        ],
+        "description": "no description yet."
+    }
+}

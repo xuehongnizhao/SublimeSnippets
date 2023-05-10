@@ -1,9 +1,11 @@
 <snippet>
     <content>
         <![CDATA[
-watch($1, (val) => {
-    $2
-})
+watch(() => $1, val => {
+$2
+}
+//, { deep: true, immediate: true }
+);
 
 ]]>
     </content>
