@@ -1,0 +1,39 @@
+<snippet>
+    <content>
+        <![CDATA[
+const props = defineProps({
+
+    ${1:str}: {
+        type: String,
+        default: ""
+    },
+    /*
+         ${2:arr}: {
+        type: Array,
+        default: () => [],
+    },
+      */
+    /*
+     ${3:object}: {
+       type: Object,
+       default: {
+          
+       }
+   }, 
+     */
+    /*
+     ${4:func}: { //在组件内调用在组件外实现方法 类似回调方法 使用用:
+        type: Function,
+        default: () => {
+            }
+        }
+     */
+
+})
+]]>
+    </content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>props</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>

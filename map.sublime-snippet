@@ -1,0 +1,9 @@
+<!-- map()方法会返回一个新数组，每一个元素修改后 -->
+<snippet>
+    <content>
+        <![CDATA[map(mapVal => ${1:code});
+]]>
+    </content>
+    <tabTrigger>map</tabTrigger>
+
+</snippet>

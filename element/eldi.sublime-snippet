@@ -1,7 +1,7 @@
 <snippet>
     <content>
         <![CDATA[
-<el-dialog title="$1" v-model="$2Open"  width="${3:800px}">
+<el-dialog :close-on-click-modal="false" :close-on-press-escape="false" title="$1" v-model="$2Open"  width="${3:800px}">
     $5
     <template #footer>
         <el-button @click="$2Open = false">取 消</el-button>

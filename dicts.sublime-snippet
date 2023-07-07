@@ -2,7 +2,7 @@
     <content>
         <![CDATA[
 const { proxy } = getCurrentInstance();
-const dicts = ref(proxy.useDict(['$1']))
+const dicts = ref(proxy.useDict('$1'))
 ]]>
     </content>
     <tabTrigger>dicts</tabTrigger>

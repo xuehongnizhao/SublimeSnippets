@@ -1,11 +1,11 @@
-<!-- every()方法会返回一个Boolean类型的值，该值取决了数组中是否所有有元素满足给定的条件 不满足就停止 -->
+<!-- find()方法会返回一个Boolean类型的值，该值取决了数组中是否所有有元素满足给定的条件 不满足就停止 -->
 <snippet>
   <content>
-    <![CDATA[every((everyVal) => everyVal)
+    <![CDATA[find((findVal) => findVal.${1:code}==${2:code})
 ]]>
   </content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>every</tabTrigger>
+  <tabTrigger>find</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <!-- <scope>source.python</scope> -->
 </snippet>

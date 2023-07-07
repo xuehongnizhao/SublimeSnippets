@@ -1,14 +1,11 @@
 <!-- filter()方法会返回一个新数组，该新数组的元素是符合回调函数中筛选条件的结果 -->
 <snippet>
     <content>
-        <![CDATA[map(value => {
-  
-  return value;
-});
+        <![CDATA[filter(item => item.${1:code} === ${2:code})
 ]]>
     </content>
     <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>map</tabTrigger>
+    <tabTrigger>filter</tabTrigger>
     <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <!-- <scope>source.python</scope> -->
 </snippet>
